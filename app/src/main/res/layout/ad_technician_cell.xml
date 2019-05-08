@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1800b3f4"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/technician_list_layout"
+            android:background="#fff"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/id_tech"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Id"
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/fullname_tech"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Name"/>
+            <TextView
+                android:id="@+id/mobile_tech"
+                android:layout_toRightOf="@+id/fullname_tech"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="UserId"/>
+            <TextView
+                android:id="@+id/state_tech"
+                android:layout_toRightOf="@+id/mobile_tech"
+                android:layout_centerVertical="true"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:text="Password"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

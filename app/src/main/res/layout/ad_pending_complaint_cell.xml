@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1800b3f4"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/pending_complaint_list_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:padding="5dp">
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/id_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/product_category_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="product category"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/customer_name_complaint"
+                android:layout_toRightOf="@+id/product_category_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="name"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/city_complaint"
+                android:layout_toRightOf="@+id/customer_name_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="City"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/district_complaint"
+                android:layout_toRightOf="@+id/city_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="District"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1800b3f4"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_below="@+id/first_layout"
+            android:id="@+id/complaint_sub_report_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:layout_margin="5dp"
+            android:padding="5dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/id_spare"
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/complaint_Id"
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/technician_Id"
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""/>
+            <TextView
+                android:id="@+id/complaintDate"
+                android:layout_width="120sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:text="date"/>
+            <TextView
+                android:id="@+id/customer_name"
+                android:layout_toRightOf="@+id/complaintDate"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Michel"/>
+
+            <ImageView
+                android:id="@+id/eye"
+                android:layout_alignParentRight="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/complaint_report"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="35dp"
+                android:src="@drawable/ic_eye"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

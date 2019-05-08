@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sungracecrm.BlankFragment">
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/working_area1_layout"-->
+    <!--android:layout_below="@+id/working_area_text1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="horizontal">-->
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="6"-->
+    <!--android:background="#fff"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/snapshot_text_1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="CUSTOMER PHOTO"/>-->
+    <!--<Button-->
+    <!--android:id="@+id/snapshot_1"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:drawableLeft="@drawable/ic_camera"-->
+    <!--android:text="CLICK PHOTO"/>-->
+    <!--</LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/signature_layout"
+        android:layout_below="@+id/working_area_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customer_signature_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="CUSTOMER SIGNATURE"/>
+            <ImageView
+                android:id="@+id/customer_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_photo_camera_"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:background="#fff"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/engineer_signature_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENGINEER SIGNATURE"/>
+            <ImageView
+                android:id="@+id/engineer_signature"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_photo_camera_"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@+id/snapshot_text_1"-->
+        <!--android:id="@+id/snap1layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:weightSum="2">-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="6"-->
+        <!--android:background="#fff"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:orientation="vertical">-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" -->
+            <!--android:text="image 1"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/take_image_from_camera"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableLeft="@drawable/ic_camera"-->
+            <!--android:text="Take Image"/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="6"-->
+        <!--android:background="#fff"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:orientation="vertical">-->
+        <!--<Button-->
+            <!--android:id="@+id/take_image_from_gallery"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:drawableLeft="@drawable/ic_camera"-->
+            <!--android:text="Take Image"/>-->
+    <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</FrameLayout>

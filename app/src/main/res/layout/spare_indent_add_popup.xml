@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1800b3f4"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <!--<ImageView-->
+                <!--android:id="@+id/image"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginRight="5dp" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/text"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toRightOf="@+id/image"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/dialogButtonOK"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text=" Ok "-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:layout_below="@+id/image"-->
+                <!--/>-->
+
+            <TextView
+                android:id="@+id/crn_no_heading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:text="Add New Spare Details"
+                android:textSize="18dp"/>
+            <TextView
+                android:id="@+id/spare_name_text"
+                android:layout_below="@+id/crn_no_heading"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Spares Name*"/>
+            <EditText
+                android:id="@+id/spare_name"
+                android:layout_below="@+id/spare_name_text"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_box"
+                android:layout_height="45dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:hint="Spares Name*"/>
+            <TextView
+                android:id="@+id/qty_text"
+                android:layout_below="@+id/spare_name"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qty*"/>
+            <EditText
+                android:id="@+id/qty"
+                android:layout_below="@+id/qty_text"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_box"
+                android:layout_height="45dp"
+                android:singleLine="true"
+                android:padding="5dp"
+                android:hint="Qty*"/>
+            <TextView
+                android:id="@+id/remark_text"
+                android:layout_below="@+id/qty"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remark*"/>
+            <EditText
+                android:id="@+id/remark"
+                android:layout_below="@+id/remark_text"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_box"
+                android:layout_height="100dp"
+                android:padding="5dp"
+                android:hint="Remarks*"/>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_below="@+id/remark"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/button_box"
+                android:layout_height="50dp"
+                android:textColor="#fff"
+                android:text="Submit"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

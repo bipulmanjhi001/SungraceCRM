@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_new_complaints"
+            android:icon="@drawable/ic_complaint_green_list"
+            android:title="To be Assigned" />
+        <item
+            android:id="@+id/nav_pending_complaints"
+            android:icon="@drawable/ic_pending"
+            android:title="Pending Complaints" />
+        <item
+            android:id="@+id/nav_progress_complaints"
+            android:icon="@drawable/ic_prograce_job"
+            android:title="Progress Complaints" />
+        <item
+            android:id="@+id/nav_completed_complaints"
+            android:icon="@drawable/ic_completed_job"
+            android:title="Completed Complaints" />
+        <item
+            android:id="@+id/nav_add_complaint"
+            android:icon="@drawable/ic_add"
+            android:title="Add New Complaint" />
+        <item
+            android:id="@+id/nav_technician_List"
+            android:icon="@drawable/ic_list_person"
+            android:title="Technicians List" />
+        <item
+            android:id="@+id/nav_Add_technician"
+            android:icon="@drawable/ic_add_person"
+            android:title="Add Technician" />
+        <item
+            android:id="@+id/nav_Report_list"
+            android:icon="@drawable/ic_report"
+            android:title="Complaint Report List" />
+        <item
+            android:id="@+id/nav_Spare_Request_list"
+            android:icon="@drawable/ic_spare"
+            android:title="Spare Requested List" />
+        <item
+            android:id="@+id/nav_SelfCall_list"
+            android:icon="@drawable/ic_selfcall"
+            android:title="SelfCall List" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_help_requests"-->
+                <!--android:icon="@drawable/ic_help"-->
+                <!--android:title="Help Requests" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_change_password"-->
+                <!--android:icon="@drawable/ic_key"-->
+                <!--android:title="Change Password" />-->
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

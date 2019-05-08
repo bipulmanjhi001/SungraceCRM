@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sungracecrm.HomeFragment"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="fill_vertical"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/cat_Id2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#44d7fc"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:background="@drawable/ic_warning_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="Assigned Job"/>
+                <TextView
+                    android:id="@+id/assigned_complaint_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cat_Id3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#00e2cf"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:background="@drawable/ic_prograce_white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    android:textSize="11sp"
+                    android:text="Progress Job"/>
+                <TextView
+                    android:id="@+id/progress_complaint_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cat_Id22"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#1e92ff"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:background="@drawable/ic_list_ok" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="Completed Jobs"/>
+                <TextView
+                    android:id="@+id/completed_complaint_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/cat_Id11"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#ea7900"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/ic_list" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="All Jobs "/>
+                <TextView
+                    android:id="@+id/all_complaint_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:text="- "/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cat_Id222"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#862622"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:background="@drawable/ic_selfcall" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="SelfCall"/>
+                <TextView
+                    android:id="@+id/selfCall_number22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/cat_Id111"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#00bc2a"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15sp"
+                    android:background="@drawable/ic_spare" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="Spares Requested "/>
+                <TextView
+                    android:id="@+id/spare_requested_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:textColor="#fff"
+                    android:text="- "/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/cat_Id2222"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_margin="4dp"
+                android:background="#d6b502"
+                android:padding="6dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3sp"
+                    android:background="@drawable/ic_send" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="Spare Dispatched"/>
+                <TextView
+                    android:id="@+id/spare_dispatched_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="11sp"
+                    android:textColor="#fff"
+                    android:text="-"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linlaHeaderProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+            <ProgressBar
+                android:id="@+id/pbHeaderProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ProgressBar>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="40dp"
+            android:src="@mipmap/smalllogo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="#000"
+            android:gravity="center"
+            android:text="Sungrace Energy Solutions Pvt Ltd."/>
+    </RelativeLayout>
+</FrameLayout>

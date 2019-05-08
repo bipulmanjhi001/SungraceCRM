@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_all_job"
+            android:icon="@drawable/ic_work"
+            android:title="All Jobs" />
+        <item
+            android:id="@+id/nav_assigned_job"
+            android:icon="@drawable/ic_complaint_green_list"
+            android:title="New Assigned Jobs" />
+        <item
+            android:id="@+id/nav_progress_job"
+            android:icon="@drawable/ic_prograce_job"
+            android:title="Progress Jobs" />
+        <item
+            android:id="@+id/nav_completed_job"
+            android:icon="@drawable/ic_completed_job"
+            android:title="Completed Jobs" />
+        <item
+            android:id="@+id/nav_SparesIndent_List"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Spares Indent List" />
+        <item
+            android:id="@+id/nav_SparesIndent_dispatched_List"
+            android:icon="@drawable/ic_list_ok"
+            android:title="Spares Dispatche List" />
+        <item
+            android:id="@+id/nav_Complaint_report_List"
+            android:icon="@drawable/ic_report"
+            android:title="Complaint Reports" />
+        <item
+            android:id="@+id/nav_selfcall"
+            android:icon="@drawable/ic_add"
+            android:title="Add New SelfCall" />
+        <item
+            android:id="@+id/nav_selfcall_report"
+            android:icon="@drawable/ic_selfcall"
+            android:title="SelfCall List/Report" />
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_help"-->
+                <!--android:icon="@drawable/ic_help"-->
+                <!--android:title="Help" />-->
+            <item
+                android:id="@+id/nav_office_In"
+                android:icon="@drawable/ic_key"
+                android:title="Office In" />
+            <item
+                android:id="@+id/nav_office_Out"
+                android:icon="@drawable/ic_lock_out"
+                android:title="Office out" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+
+        </menu>
+    </item>
+
+</menu>

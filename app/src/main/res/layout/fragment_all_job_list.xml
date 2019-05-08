@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sungracecrm.AllJobListFragment">
+    <RelativeLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3600b3f4"
+        android:padding="5dp">
+        <TextView
+            android:id="@+id/product_category_text"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Product Category"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/customer_name_text"
+            android:layout_toRightOf="@+id/product_category_text"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/city_text"
+            android:layout_toRightOf="@+id/customer_name_text"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="City/ Village"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/district_text"
+            android:layout_toRightOf="@+id/city_text"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:text="District"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/sec_layout"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/assigned_job_list"/>
+        <LinearLayout
+            android:id="@+id/linlaHeaderProgress"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/pbHeaderProgress"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            </ProgressBar>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#e6d07c"
+        android:visibility="gone"
+        android:layout_gravity="bottom">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/ic_back"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:text="BACK"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#1800b3f4"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_below="@+id/first_layout"
+            android:id="@+id/second_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#fff"
+            android:padding="5dp">
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/idspare"
+                android:layout_width="180sp"
+                android:layout_height="40dp"
+                android:text=""/>
+            <TextView
+                android:id="@+id/spare_name"
+                android:layout_width="180sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Spare Name"/>
+            <TextView
+                android:id="@+id/qty"
+                android:layout_toRightOf="@+id/spare_name"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Qty"/>
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_alignParentRight="true"
+                android:layout_width="100sp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#006fff"
+                android:text="Status"/>
+            <TextView
+                android:id="@+id/remark"
+                android:layout_below="@+id/spare_name"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
